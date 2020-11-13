@@ -16,6 +16,7 @@ Mozilla/5.0 (Linux; Android 5.1.1; OPPO R7sm Build/LMY47V) AppleWebKit/537.36 (K
 .nav li:not(:last-child) {
   border-right: 1px solid #666;
 }
+
 2：垂直居中任何元素
 html, body {
   height: 100%;
