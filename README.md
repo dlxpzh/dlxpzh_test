@@ -30,3 +30,23 @@ body {
   display: -webkit-flex;
   display: flex;
 }
+
+3：使列表的每项都由逗号分隔
+ul > li:not(:last-child)::after {
+  content: ",";
+}
+
+4：通用选择器 (*) 和 相邻兄弟选择器 (+) 一起使用，文档流中的所有的相邻兄弟元素将都将设置 margin-top: 1.5em 的样式
+* + * {
+  margin-top: 1.5em;
+}
+
+## js方法
+1：判断类型
+### typeof、instanceof、Object,prototype.toString.call()、constructor
+let type = function(o) {
+    let s = Object.prototype.toString.call(o);
+    return s.match(/[object (.*?)]/)[1].toLowerCase();
+};
+console.log(type(12)) // number
+console.log(type('12')) // string
